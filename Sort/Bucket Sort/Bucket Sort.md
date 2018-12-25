@@ -18,23 +18,23 @@ We can solve this problem with a one-dimensional array here. Please make sure yo
 
 First we need to apply an array of size 11 int a[11] OK, now you have 11 variables, numbered from a[0]~a[10]. At the beginning, we initialized a[0]~a[10] to 0, indicating that none of these scores have been obtained. For example, if a[0] is equal to 0, it means that no one has ever scored 0. Similarly, a[1] is equal to 0, which means that no one has scored 1 point yet. a[10] equals 0, which means that no one has scored 10 points yet.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p1.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p1.png)
 
 Let's start processing each individual's score. The first person's score is 5 points. We will increase the value of the corresponding a[5] by 1 on the original basis, that is, the value of a[5] is changed from 0 to 1, indicating that 5 points have appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p2.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p2.png)
 
 The score of the second person is 3 points. We increase the value of the corresponding a[3] by 1 on the original basis, that is, the value of a[3] is changed from 0 to 1, indicating that the 3 points have appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p3.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p3.png)
 
 Note! The score of the third person is also 5 points, so the value of a[5] needs to be increased by 1 on the basis of this, that is, the value of a[5] is changed from 1 to 2, indicating that 5 points have appeared twice.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p4.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p4.png)
 
 The scores of the fourth and fifth individuals are processed according to the method just described. The end result is the picture below.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p5.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p5.png)
 
 You find that the value in a[0]~a[10] is actually the number of times each score appears from 0 to 10. Next, we only need to print out the scores that have appeared, and print them several times, as shown below.
 
@@ -89,7 +89,7 @@ This sorting method we call it "bucket sorting" for the time being. Because the 
 
 This algorithm is like having 11 buckets, numbered from 0 to 10. For each number, a small flag is placed in the corresponding numbered bucket. Finally, as long as there are several small flags in each bucket, it is OK. For example, there is a small flag in the No. 2 bucket, which means that 2 appears once; in the No. 3 bucket, there is a small flag, which means that 3 appears once; in the No. 5 bucket, there are 2 small flags, indicating that 5 appears twice; There is a small flag in the 8th barrel, indicating that 8 has appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Chapter%20One/1.1%20p6.png)
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p6.png)
 
 Now can try to enter n integers between 0 and 1000 and sort them from large to small. If need to sort the integers with data range from 0 to 1000, we need 1001 buckets to represent the number of occurrences of each number between 0 and 1000. This must be noted. In addition, the function of each bucket here is actually "marking" the number of occurrences of each number, so I like to replace the previous array 'a' with a more appropriate name book (the word has the Record, the meaning of the mark), the code is implemented. as follows.
 
