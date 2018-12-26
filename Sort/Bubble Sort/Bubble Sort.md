@@ -30,3 +30,6 @@
 
 &#160;&#160;&#160;&#160;&#160;First, compare the first digit is smaller than the second digit, the position is swapped. The order of The five numbers after the exchange is 99 35 18 76 12. The next step should be to compare the 2nd and 3rd, 3rd and 4th. Note that it is no longer necessary to compare the 4th and 5th bits. Because after the end of the First pass, it can be determined that the 5th position is the smallest. The order of the five numbers after the end of the second pass is 99 35 76 18 12.
 
+&#160;&#160;&#160;&#160;&#160;The "third time" is the same. The order of the five numbers after the third pass is 99 76 35 18 12.
+
+&#160;&#160;&#160;&#160;&#160;Now it's the last time "the fourth time." Do you want to continue? Of course, this is purely coincidental, and it may not be possible to use other numbers.
