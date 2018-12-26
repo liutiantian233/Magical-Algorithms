@@ -33,3 +33,13 @@
 &#160;&#160;&#160;&#160;&#160;The "third time" is the same. The order of the five numbers after the third pass is 99 76 35 18 12.
 
 &#160;&#160;&#160;&#160;&#160;Now it's the last time "the fourth time." Do you want to continue? Of course, this is purely coincidental, and it may not be possible to use other numbers.
+
+&#160;&#160;&#160;&#160;&#160;The principle, of "bubble sorting" is "every time you can only determine to home a number." That is, the first time can only determine that the number of the last digit (ie, the fifth digit) is homed. The second time can only home the number on the second digit of the countdown (ie, the fourth digit). The third time can only be used. The number in the third digit of the countdown (ie, the third digit) is homed, and there are still two positions in the front that is not homed, so we still need to do the "fourth time."
+
+&#160;&#160;&#160;&#160;&#160;The “fourth time” only needs to compare the size of the first and second digits. Because the numbers in the next three positions are homed, the first bit is now 99 and the second bit is 76. No swapping is required. The order of these five numbers remains the same as 99 76 35 18 12. At this point, the sorting is perfectly finished. There are already 4 numbers in the 5 numbers, and the last number can only be put in the 1st place.
+
+&#160;&#160;&#160;&#160;&#160;**Finally, let's summarize**: If there are n numbers to sort, just homing n-1 numbers, that is, n-1 operations. And "every time" need to compare the two adjacent numbers from the first digit, and put the smaller one on the back. After the comparison is complete, move one backward to continue comparing the size of the next two adjacent numbers. Repeat this step, until the **last number that has not been homed**, and the number that has been homed does not need to be compared.
+
+----------
+
+&#160;&#160;&#160;&#160;&#160;Is this algorithm very powerful? Remember that I always exchanged it for someone else when I took a group photo. I do not know whether the inspiration for the person who invented this algorithm came from this. Below is the code to look at how I implemented it.
