@@ -13,6 +13,7 @@ I distinguish different algorithms according to the type of algorithm and arrang
 
 ### The Sort
 -1. [Bucket Sort](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort.md)
+
 -2. [Bubble Sort](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bubble%20Sort/Bubble%20Sort.md)
 
 ## Views and understanding
