@@ -28,7 +28,7 @@
 
 &#160;&#160;&#160;&#160;&#160;In fact, our sorting only homing the smallest of the five numbers. Every time we return a number, we call it "one time." Below we will continue to repeat the previous process, homing the remaining 4 numbers one by one.
 
-&#160;&#160;&#160;&#160;&#160;First, compare the first digit is smaller than the second digit, the position is swapped. The order of The five numbers after the exchange is 99 35 18 76 12. The next step should be to compare the 2nd and 3rd, 3rd and 4th. Note that it is no longer necessary to compare the 4th and 5th bits. Because after the end of the First pass, it can be determined that the 5th position is the smallest. The order of the five numbers after the end of the second pass is 99 35 76 18 12.
+&#160;&#160;&#160;&#160;&#160;Ok, now it’s “second time” and the goal is to put the second smallest number in the end. First, compare the first digit is smaller than the second digit, the position is swapped. The order of The five numbers after the exchange is 99 35 18 76 12. The next step should be to compare the 2nd and 3rd, 3rd and 4th. Note that it is no longer necessary to compare the 4th and 5th bits. Because after the end of the First pass, it can be determined that the 5th position is the smallest. The order of the five numbers after the end of the second pass is 99 35 76 18 12.
 
 &#160;&#160;&#160;&#160;&#160;The "third time" is the same. The order of the five numbers after the third pass is 99 76 35 18 12.
 
@@ -43,3 +43,119 @@
 ----------
 
 &#160;&#160;&#160;&#160;&#160;Is this algorithm very powerful? Remember that I always exchanged it for someone else when I took a group photo. I do not know whether the inspiration for the person who invented this algorithm came from this. Below is the code to look at how I implemented it.
+
+```c
+#include <stdio.h>
+int main()
+{
+  int a[100],i,j,t,n;
+  
+  scanf("%d",&n);
+  
+  for(i=1;i<=n;i++)
+    scanf("%d",&a[i]);
+  
+  for(i=1;i<=n-1;i++)
+  {
+    for(j=1;j<=n-i;j++)
+    {
+      if(a[j]<a[j+1])
+      {
+        t=a[j];
+        a[j]=a[j+1];
+        a[j+1]=t;
+      }
+    }
+  }
+  for(i=1;i<=n;i++)
+    printf("%d ",a[i]);
+  
+  getchar();getchar();
+  return 0;
+}
+```
+
+&#160;&#160;&#160;&#160;&#160;Can enter the following data for verification.
+
+```
+10
+8 100 50 22 15 6 1 1000 999 0
+```
+
+&#160;&#160;&#160;&#160;&#160;The result of the operation is:
+
+```
+0 1 6 8 15 22 50 100 999 1000
+```
+
+&#160;&#160;&#160;&#160;&#160;By modifying the above code slightly, can solve the remaining problems, as follows.
+
+```c
+#include <stdio.h>
+
+struct student
+{
+  char name[21];
+  char score;
+};
+
+int main()
+{
+  struct student a[100],t;
+  int i,j,n;
+  scanf("%d",&n);
+  
+  for(i=1;i<=n;i++)
+    scanf("%s %d",a[i].name,&a[i].score);
+  
+  for(i=1;i<=n-1;i++)
+  {
+    for(j=1;j<=n-i;j++)
+    {
+      if(a[j].score<a[j+1].score)
+      {
+        t=a[j];
+        a[j]=a[j+1];
+        a[j+1]=t;
+      }
+    }
+  }
+  for(i=1;i<=n;i++)
+    printf("%s\n",a[i].name);
+  
+  getchar();getchar();
+  return 0;
+}
+```
+
+&#160;&#160;&#160;&#160;&#160;Can enter the following data for verification.
+
+```
+5
+huhu 5
+haha 3
+xixi 5
+hengheng 2
+gaoshou 8
+```
+
+&#160;&#160;&#160;&#160;&#160;The result of the operation is:
+
+```
+gaoshou
+huhu
+xixi
+haha
+hengheng
+```
+
+&#160;&#160;&#160;&#160;&#160;The core part of bubble sorting is a double nested loop. It is not difficult to see that the time complexity of bubble sorting is O(N 2). This is a very high time complexity. Bubbling sorting began as early as 1956, and many people tried to improve the bubble sorting, but the results were disappointing. For example, Donald E. Knuth (Chinese name Gartner, winner of the Turing Award in 1974) said: "The bubble sorting does not seem to have anything other than its fascinating name and some interesting theoretical problems. What is worth recommending." You may have to ask: Is there a better sorting algorithm? Don't go away, see the next section - Quick Sort.
+
+---------
+
+## Feedback and suggestions
+- E-mail：<liutia20@msu.edu>
+
+---------
+
+Thank you for reading my notes and ideas.
