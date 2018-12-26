@@ -1,1 +1,9 @@
+# Bubble Sort
 
+&#160;&#160;&#160;&#160;&#160;**Bubble sort**, sometimes referred to as **sinking sort**, is a simple [sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm) that repeatedly steps through the list, compares adjacent pairs and [swaps](https://en.wikipedia.org/wiki/Swap_(computer_programming)) them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a [comparison sort](https://en.wikipedia.org/wiki/Comparison_sort), is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort). Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position. -- [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
+
+&#160;&#160;&#160;&#160;&#160;The above paragraph is from Wikipedia, but I think it is difficult for many people to understand. That is a very official and rigid introduction. So let me simplify it!
+
+----------
+
+&#160;&#160;&#160;&#160;&#160;The most important thing about Bucket Sort is that it wastes space! For example, if the range of sorting needs to be between 0 and 2100000000, then you need to apply 2100000001 variables, which mean to write `int a[2100000001]`. Because we need to go to 2100000001 "buckets" to store the number of occurrences of each number between 0 and 2100000000. Even if you only sort 5 numbers (for instance, the 5 numbers are 1, 1912345678, 2100000000, 18000000, and 912345678), you still need 2100000001 "buckets", which is a waste of space! Also, what if you need to sort now instead of integers but some decimals, such as sorting the five numbers 5.56789, 2.12, 1.1, 3.123, 4.1234 from small to large? Bubble sorting can solve these two questions.
