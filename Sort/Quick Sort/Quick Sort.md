@@ -20,8 +20,8 @@
 
 &#160;&#160;&#160;&#160;&#160;Recalling the bubble sorting, how to make each number homing steps by step through "swap". At this point, the "exchange" method can also be used to achieve the goal.
 
-&#160;&#160;&#160;&#160;&#160;The method is actually very simple: "Probe" is started from both ends of the initial sequence "6 1 2 7 9 3 4 5 10 8". First find a number less than 6 from right to left, then find a number greater than 6 from left to right, and then exchange them. Here we can use two variables i and j, pointing to the leftmost and rightmost of the sequence. We have a nice name for these two variables, "Sentinel i" and "Sentinel j". At the beginning, let the sentinel i point to the far left of the sequence (ie i=1), pointing to the number 6. Let the sentinel j point to the far right of the sequence (ie j=10), pointing to the number 8.
+&#160;&#160;&#160;&#160;&#160;The method is actually very simple: **"Probe"** is started from both ends of the initial sequence "6 1 2 7 9 3 4 5 10 8". First find a number less than 6 from right to left, then find a number greater than 6 from left to right, and then exchange them. Here we can use two variables i and j, pointing to the leftmost and rightmost of the sequence. We have a nice name for these two variables, **"Sentinel i"** and **"Sentinel j"**. At the beginning, let the sentinel i point to the far left of the sequence (ie i=1), pointing to the number 6. Let the sentinel j point to the far right of the sequence (ie j=10), pointing to the number 8.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png)
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png" width="80%" height="80%">
 
-&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;First the sentinel j began to move. Since the reference number is the leftmost number, it is important to have the sentinel j move first. The sentinel j moves to the left step by step (ie j--) until it finds a number less than 6 to cease. Then the sentinel i moves to the right step by step (ie i++) until it finds a number greater than 6 to stop. Finally, the sentinel j stopped in front of the number 5, and the sentinel i stopped in front of the number 7.
