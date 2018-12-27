@@ -22,6 +22,6 @@
 
 &#160;&#160;&#160;&#160;&#160;The method is actually very simple: "Probe" is started from both ends of the initial sequence "6 1 2 7 9 3 4 5 10 8". First find a number less than 6 from right to left, then find a number greater than 6 from left to right, and then exchange them. Here we can use two variables i and j, pointing to the leftmost and rightmost of the sequence. We have a nice name for these two variables, "Sentinel i" and "Sentinel j". At the beginning, let the sentinel i point to the far left of the sequence (ie i=1), pointing to the number 6. Let the sentinel j point to the far right of the sequence (ie j=10), pointing to the number 8.
 
-<center>![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png)</center>
+![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png)
 
-
+&#160;&#160;&#160;&#160;&#160;
