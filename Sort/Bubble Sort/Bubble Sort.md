@@ -98,13 +98,14 @@ int main()
 struct student
 {
   char name[21];
-  char score;
+  int score;
 };
 
 int main()
 {
   struct student a[100],t;
   int i,j,n;
+
   scanf("%d",&n);
   
   for(i=1;i<=n;i++)
@@ -122,6 +123,7 @@ int main()
       }
     }
   }
+  
   for(i=1;i<=n;i++)
     printf("%s\n",a[i].name);
   
