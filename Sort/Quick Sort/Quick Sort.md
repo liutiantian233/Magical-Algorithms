@@ -163,7 +163,15 @@ int main()
 1 2 3 4 5 6 7 8 9 10
 ```
 
-&#160;&#160;&#160;&#160;&#160;The quick sort was proposed by C. A. R. Hoare (Charles Antony Richard Hoare) in 1960, and many others have been further optimized. If you are interested in quick sorting, you can check out the paper "Quicksort" published by Hoare in the Computer Journal in 1962 and the seventh chapter of "Introduction to Algorithms". The quick sorting algorithm was only the first time that Hoare was able to show his talents in the computer field. Later he was appreciated and reused by the boss. The company hopes that he will design a new high-level language for the original machine. Be aware that there are no high-level languages like PASCAL or C at the time. Later, Hoare participated in the "ALGOL 60" training course organized by Edsger Wybe Dijkstra (the Turing Award winner in 1972). He felt that he did not be too confident as he was to design a new language. It was best to carry out the existing "ALGOL 60". Improved so that it can be used on the company's latest machines. So he designed a subset of the "ALGOL 60" version. This version is the perfect in the implementation of "ALGOL 60" in terms of efficiency and reliability, so Hoare has received the attention of the international academic community. Then, he also invented the well-known "case" statement in the design of "ALGOL X", which was later widely used in various high-level languages, such as PASCAL, C, Java, and so on. Of course, Hoare has a lot of contributions in the computer field. He won the Turing Award in 1980.
+&#160;&#160;&#160;&#160;&#160;The quick sort was proposed by **C. A. R. Hoare (Charles Antony Richard Hoare)** in 1960, and many others have been further optimized. If you are interested in quick sorting, you can check out the paper "Quicksort" published by Hoare in the **_Computer Journal_** in 1962 and the seventh chapter of "Introduction to Algorithms".
+
+&#160;&#160;&#160;&#160;&#160;The quick sorting algorithm was only the first time that Hoare was able to show his talents in the computer field. Later he was appreciated and reused by the boss. The company hopes that he will design a new high-level language for the original machine. Be aware that there are no high-level languages like **PASCAL** or **C** at the time.
+
+&#160;&#160;&#160;&#160;&#160;Later, Hoare participated in the **"ALGOL 60"** training course organized by **Edsger Wybe Dijkstra (the Turing Award winner in 1972)**. He felt that he did not be too confident as he was to design a new language. It was best to carry out the existing **"ALGOL 60"**. Improved so that it can be used on the company's latest machines. So he designed a subset of the **"ALGOL 60"** version.
+
+&#160;&#160;&#160;&#160;&#160;This version is the perfect in the implementation of **"ALGOL 60"** in terms of efficiency and reliability, so Hoare has received the attention of the international academic community.
+
+&#160;&#160;&#160;&#160;&#160;Then, he also invented the well-known **"case" statement** in the design of **"ALGOL X"**, which was later widely used in various high-level languages, such as **PASCAL**, **C**, **Java**, and so on. Of course, Hoare has a lot of contributions in the computer field. He won the **Turing Award** in 1980.
 
 ---------
 
