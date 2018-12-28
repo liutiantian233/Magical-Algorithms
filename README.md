@@ -18,6 +18,8 @@ I distinguish different algorithms according to the type of algorithm and arrang
 
 - [Quick Sort](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort.md)
 
+- [Summary of Sorting Algorithms](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Summary%20of%20Sorting%20Algorithms/Summary%20of%20Sorting%20Algorithms.md)
+
 ## Views and understanding
 
 If you are confused about reading my notes or have errors in my notes, I am looking forward to hearing from you. I am happy to answer questions or accept comments. If you have some new ideas or ideas for my project, I will also actively improve and improve!
