@@ -22,13 +22,13 @@
 
 &#160;&#160;&#160;&#160;&#160;The method is actually very simple: **"Probe"** is started from both ends of the initial sequence `6 1 2 7 9 3 4 5 10 8`. First find a number less than 6 from right to left, then find a number greater than 6 from left to right, and then exchange them. Here we can use two variables i and j, pointing to the leftmost and rightmost of the sequence. We have a nice name for these two variables, **"Sentinel i"** and **"Sentinel j"**. At the beginning, let the sentinel i point to the far left of the sequence (ie i=1), pointing to the number 6. Let the sentinel j point to the far right of the sequence (ie j=10), pointing to the number 8.
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
 &#160;&#160;&#160;&#160;&#160;First the sentinel j began to move. Since the reference number is the leftmost number, it is important to have the sentinel j move first. The sentinel j moves to the left step by step (ie j--) until it finds a number less than 6 to cease. Then the sentinel i moves to the right step by step (ie i++) until it finds a number greater than 6 to stop. Finally, the sentinel j stopped in front of the number 5, and the sentinel i stopped in front of the number 7.
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p2.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p3.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
 &#160;&#160;&#160;&#160;&#160;Now exchange the values of the elements pointed to by Sentinel i and Sentinel j. The sequence after the exchange is as follows.
 
@@ -42,9 +42,9 @@
 6  1  2  5  4  3  9  7  10  8
 ```
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p4.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p5.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
 &#160;&#160;&#160;&#160;&#160;The subsequent exchange ends and the "probe" continues. The sentinel j continued to be move to the left, and he found 3 (smaller than the baseline number 6, meeting the requirements) and then stopped. Sentinel i continues to move to the right. Bad! At this point, the sentinel i and the sentinel j met, and the sentinel i and the sentinel j both went to 3. Explain that the "probe" ends. We exchange benchmarks 6 and 3. The sequence after the exchange is reproduced below.
 
@@ -52,7 +52,7 @@
 3  1  2  5  4  6  9  7  10  8
 ```
 
-<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p6.png" width="80%" height="80%">
+<img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20.png" width="80%" height="80%">
 
 <img src="https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p7.png" width="80%" height="80%">
 
