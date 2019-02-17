@@ -18,7 +18,7 @@
 
 &#160;&#160;&#160;&#160;&#160;Please help Tony complete the work of "deduplication" and "sorting"
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Summary%20of%20Sorting%20Algorithms/Summary%20of%20Sorting%20Algorithms.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Summary%20of%20Sorting%20Algorithms/Summary%20of%20Sorting%20Algorithms.png)
 
 &#160;&#160;&#160;&#160;&#160;The input has 2 lines, and the first line is a positive integer, indicating that there are n students participating in the survey (n<=100). Line 2 has n positive integers separated by spaces, which is the ISBN number of each book (assuming the book's ISBN number is between 1 and 1000).
 
@@ -140,6 +140,7 @@ int main()
 ---------
 
 ## Feedback and suggestions
+
 - E-mail：<liutia20@msu.edu>
 
 ---------
