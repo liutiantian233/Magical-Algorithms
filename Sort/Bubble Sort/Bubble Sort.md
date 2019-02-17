@@ -24,7 +24,7 @@
 
 &#160;&#160;&#160;&#160;&#160;After 4 comparisons, we found that the smallest number is already (already in the last bit, please note the movement of 12 this number), is it amazing? Now recalls the process of the comparison. Each time, **the two adjacent numbers are comparable**. If the latter number is larger than the previous number, the positions of the two numbers are exchanged. It has been compared until the last two numbers are comparable, and the smallest number is in the last one. It's like a bubble, stepping back and forth, until the last one. So this sorting method has a nice name **"bubble sorting"**.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bubble%20Sort/Bubble%20Sort.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bubble%20Sort/Bubble%20Sort.png)
 
 &#160;&#160;&#160;&#160;&#160;In fact, our sorting is just to home the smallest of the five numbers. Every time we return a number, we call it "once." Below we will continue to repeat the previous process, homing the remaining 4 numbers one by one.
 
@@ -158,6 +158,7 @@ hengheng
 ---------
 
 ## Feedback and suggestions
+
 - E-mail：<liutia20@msu.edu>
 
 ---------
