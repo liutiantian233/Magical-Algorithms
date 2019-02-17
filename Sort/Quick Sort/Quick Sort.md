@@ -22,11 +22,11 @@
 
 &#160;&#160;&#160;&#160;&#160;The method is actually very simple: **"Probe"** is started from both ends of the initial sequence `6 1 2 7 9 3 4 5 10 8`. First find a number less than 6 from right to left, then find a number greater than 6 from left to right, and then exchange them. Here we can use two variables i and j, pointing to the leftmost and rightmost of the sequence. We have a nice name for these two variables, **"Sentinel i"** and **"Sentinel j"**. At the beginning, let the sentinel i point to the far left of the sequence (ie i=1), pointing to the number 6. Let the sentinel j point to the far right of the sequence (ie j=10), pointing to the number 8.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p1.png)
 
 &#160;&#160;&#160;&#160;&#160;First the sentinel j began to move. Since the reference number is the leftmost number, it is important to have the sentinel j move first. The sentinel j moves to the left step by step (ie j--) until it finds a number less than 6 to cease. Then the sentinel i moves to the right step by step (ie i++) until it finds a number greater than 6 to stop. Finally, the sentinel j stopped in front of the number 5, and the sentinel i stopped in front of the number 7.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p2.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p2.png)
 
 &#160;&#160;&#160;&#160;&#160;Now exchange the values of the elements pointed to by Sentinel i and Sentinel j. The sequence after the exchange is as follows.
 
@@ -40,7 +40,7 @@
 6  1  2  5  4  3  9  7  10  8
 ```
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p3.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p3.png)
 
 &#160;&#160;&#160;&#160;&#160;The subsequent exchange ends and the "probe" continues. The sentinel j continued to be move to the left, and he found 3 (smaller than the baseline number 6, meeting the requirements) and then stopped. Sentinel i continues to move to the right. Bad! At this point, the sentinel i and the sentinel j met, and the sentinel i and the sentinel j both went to 3. Explain that the "probe" ends. We exchange benchmarks 6 and 3. The sequence after the exchange is reproduced below.
 
@@ -48,9 +48,9 @@
 3  1  2  5  4  6  9  7  10  8
 ```
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p4.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p4.png)
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p5.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p5.png)
 
 &#160;&#160;&#160;&#160;&#160;At this point, the first round of "probe" really ended. At this time, the reference number 6 serves as the demarcation point, and the number on the left side of 6 is less than or equal to 6, and the number on the right side of 6 is greater than or equal to 6. Looking back at the process, in fact, the mission of the sentinel j is to find a number less than the benchmark number, and the mission of the sentinel i is to find a number greater than the benchmark number until i and j meet.
 
@@ -76,7 +76,7 @@
 
 &#160;&#160;&#160;&#160;&#160;At this point, the sorting is completely over. Each round of quick sorting is actually homing the baseline number of this round until all the numbers are put in place, and the sorting is over. The following is the processing of the entire algorithm.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Quick%20Sort/Quick%20Sort%20p6.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Quick%20Sort/Quick%20Sort%20p6.png)
 
 &#160;&#160;&#160;&#160;&#160;Quick sorting is faster because each swap is skipped compared to bubble sorting. **Set a reference point each time you sort, put all the numbers less than or equal to the reference point to the left of the reference point, and put all the numbers greater than or equal to the reference point to the right of the reference point.** In this way, each time you exchange, you can't exchange between adjacent numbers like a bubble sort, and the exchange distance is much larger. Therefore, the total number of comparisons and exchanges is reduced, and the speed naturally increases. Of course, in the worst case, it is still possible that two adjacent numbers are exchanged. So, the worst time complexity of Quick sorting and the bubble sorting are the same as O(N^2), and its average time complexity is O(N log N). In fact, quick sorting is based on an idea called "dichotomy." Code shows as below.
 
@@ -176,6 +176,7 @@ int main()
 ---------
 
 ## Feedback and suggestions
+
 - E-mail：<liutia20@msu.edu>
 
 ---------
