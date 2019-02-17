@@ -18,23 +18,23 @@
 
 &#160;&#160;&#160;&#160;&#160;First we need to apply an array of size 11 `int a[11]` OK, now you have 11 variables, numbered from a[0] - a[10]. At the beginning, we initialized a[0] - a[10] to 0, indicating that none of these scores have been obtained. For example, if a[0] is equivalent to 0, it means that no one has ever scored 0. Similarly, a[1] is equivalent to 0, which means that no one has scored 1 point yet. a[10] equals 0, which means that no one has scored 10 points yet.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p1.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p1.png)
 
 &#160;&#160;&#160;&#160;&#160;Let's start processing each individual's score. The first person's score is 5 points. We will increase the value of the corresponding a[5] by 1 on the original basis, that is, the value of a[5] is changed from 0 to 1, indicating that 5 points have appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p2.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p2.png)
 
 &#160;&#160;&#160;&#160;&#160;The score of the second person is 3 points. We increase the value of the corresponding a[3] by 1 on the original basis, that is, the value of a[3] is changed from 0 to 1, indicating that the 3 points have appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p3.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p3.png)
 
 &#160;&#160;&#160;&#160;&#160;**Note!** The score of the third person is also 5 points, so the value of a[5] needs to be increased by 1 on the basis of this, that is, the value of a[5] is changed from 1 to 2, indicating that 5 points have appeared twice.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p4.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p4.png)
 
 &#160;&#160;&#160;&#160;&#160;The score of the fourth and fifth individuals is processed according to the method just described. The end result is the picture below.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p5.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p5.png)
 
 &#160;&#160;&#160;&#160;&#160;You find that the value of a[0] - a[10] is actually the number of times each score appears from 0 to 10. Next, we only need to print out the score that has appeared, and prints them several times, as showed below.
 
@@ -89,7 +89,7 @@ int main()
 
 &#160;&#160;&#160;&#160;&#160;This algorithm is like having 11 buckets, numbered from 0 to 10. For each number, a small flag is placed in the corresponding numbered bucket. Finally, as long as there are numerous small flags in each bucket, it is OK. For example, there is a small flag in the No. 2 bucket, which means that 2 appears once; in the No. 3 bucket, there is a small flag, which means that 3 appears once; in the No. 5 bucket, there are 2 small flags, indicating that 5 appears twice; There is a small flag in the 8th barrel, indicating that 8 has appeared once.
 
-![image](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort%20p6.png)
+![](https://raw.githubusercontent.com/liutiantian233/Magical-Algorithms/master/Sort/Bucket%20Sort/Bucket%20Sort%20p6.png)
 
 &#160;&#160;&#160;&#160;&#160;Now can try to enter n integers between 0 and 1000 and sort them from large to small. If need to sort the integers with data range from 0 to 1000, we need 1001 buckets to represent the number of occurrences of each number between 0 and 1000. This must be noted. In addition, the function of each bucket here is actually "marking" the number of occurrences of each number, so I like to replace the previous array 'a' with a more appropriate name book (the word has the Record, the meaning of the mark), the code is implemented. As follows.
 
@@ -133,7 +133,7 @@ int main()
 
 &#160;&#160;&#160;&#160;&#160;Finally, let's talk about the complexity of time. The loop in line 6 of the code is looped a total of m times (m is the number of buckets), the code of line 9 is looped n times (n is the number of numbers to be sorted), and lines 14 and 15 are looped together. m+n times. So the entire sorting algorithm performs a total of m+n+m+n times.
 
-&#160;&#160;&#160;&#160;&#160;We use the capital letter O to represent the time complexity, so the time complexity of the algorithm is O(m+n+m+n) or O(2*(m+n)). We can ignore smaller constants when we say time complexity, and the time complexity of bucket sorting is O(m+n). Another point is the case that when expressing time complexity, n and m are usually in uppercase letters, O(M+N).
+&#160;&#160;&#160;&#160;&#160;We use the capital letter O to represent the time complexity, so the time complexity of the algorithm is O(m+n+m+n) or O(2 * (m+n)). We can ignore smaller constants when we say time complexity, and the time complexity of bucket sorting is O(m+n). Another point is the case that when expressing time complexity, n and m are usually in uppercase letters, O(M+N).
 
 &#160;&#160;&#160;&#160;&#160;This is a very fast sorting algorithm. Bucket sorting has been used since 1956, and the basic idea of the algorithm was proposed by EJIssac and RCSingleton. As I said earlier, this is not really a bucket sorting algorithm. The real bucket sorting algorithm is more complex than this. One thing to be noted is that the current simplified version of the bucket sorting algorithm is not really a sorting algorithm in the true sense. Why? For example, if you encounter the following example, there is not the right way.
 
@@ -142,6 +142,7 @@ int main()
 ---------
 
 ## Feedback and suggestions
+
 - E-mail：<liutia20@msu.edu>
 
 ---------
