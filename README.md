@@ -1,4 +1,5 @@
 # Magical-Algorithms
+
 About The Algorithms
 
 ## Written at the beginning
@@ -12,6 +13,7 @@ I distinguish different algorithms according to the type of algorithm and arrang
 -----
 
 ### The Sort
+
 - [Bucket Sort](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bucket%20Sort/Bucket%20Sort.md)
 
 - [Bubble Sort](https://github.com/liutiantian233/Magical-Algorithms/blob/master/Sort/Bubble%20Sort/Bubble%20Sort.md)
@@ -27,7 +29,9 @@ If you are confused about reading my notes or have errors in my notes, I am look
 **TianTian Created on the One day after Christmas in 2018**
 
 ## Feedback and suggestions
+
 - E-mail：<liutia20@msu.edu>
 
 ---------
+
 Thanks for reading this help document
